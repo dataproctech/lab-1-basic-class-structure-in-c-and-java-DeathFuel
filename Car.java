@@ -1,16 +1,23 @@
 public class Car {
-    // Attributes
-    
-    // Constructor
-    
-    // Method to display car information
-    
-    }
+    // Private attributes
+    private String make;
+    private String model;
+    private int year;
 
+    // Constructor
+    public Car(String _make, String _model, int _year) {
+        this.make = _make;
+        this.model = _model;
+        this.year = _year;
+    }
+    // Prints out information
+    public void info() {
+        System.out.println("This car is a " + this.make + " " + this.model + ", produced " + this.year + ".");
+    }
+    // Creates a car object and prints its information.
     public static void main(String[] args) {
-        // Create a Car object
+        Car c = new Car("Fiat", "126p", 1978);
         
-        // Display car details
-        
+        c.info();
     }
 }
