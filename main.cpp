@@ -3,6 +3,7 @@
 using namespace std;
 
 class Car {
+	// Constructor and information
 	public:
 		Car(string _make, string _model, int _year) {
 			this->make = _make;
@@ -14,12 +15,14 @@ class Car {
 					this->make.c_str(), this->model.c_str(), this->year
 				  );
 		}
+	// Private attributes
 	private:
 		string make;
 		string model;
 		int year;
 };
 
+// Creates a car object and prints its information.
 int main() {
 	Car c = Car("Fiat", "126p", 1978);
 
